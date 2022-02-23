@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Gideon Roman', sans-serif;
+    font-weight: 700;
+    scroll-behavior: smooth;
+    /* transition: 1s ease-in; */
+}
+
+header.global{
+    position: fixed;
+    width: 100%;
+    height: 4em;
+    padding-top: 2em;
+    background-color: hsl(0, 0%, 97%);
+    z-index: 1000;
+    box-shadow: 4px 6px 5px hsl(0, 0%, 90%);
+}
+
+.coverimage{
+    text-align: center;
+}
+
+.coverimage img{
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: auto;    
+}
+
+.coverimage span{
+    position: absolute;
+    top: 10em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.material-icons{
+    cursor: pointer;
+}
+
+#cart{
+    display: none;
+    width: 20%;
+    height: 400%;
+    background-color: hsl(0, 0%, 97%);
+    position: absolute;
+    right: 0;
+    top: 6em;
+    overflow:scroll;
+}
+
+#cart .title{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1em;
+    margin-bottom: -2em;
+}
+
+#cart{
+    padding-left: 20px;
+}
+
+
+h2{
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 2em;
+    color: black;
+}
+
+.logo img{
+    position: relative;
+    top: -30px;
+    width: 90px;
+    border-radius: 45px;
+}
+
+nav.global{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.mainleft{
+    display: contents;
+}
+
+.mainright{
+    display: contents;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+li{
+    list-style: none;
+}
+
+.drinktitle , .treattitle{
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 1em;
+    font-family: 'Amatic SC';
+}
+
+.treattitle{
+    margin-top: 2em;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: fit-content;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.content p{
+    margin: 10px 0;
+}
+
+.content button{
+    margin: 10px 20px;
+    background-color: brown;
+    border-style: none;
+    border-radius: 20px;
+    padding: 0.5em;
+    font-size: 18px;
+}
+
+.contents img{
+    width: 100%;
+    margin-bottom: 10px;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+    border-radius: 45%;
+}
+
+.contents{
+    border-radius: 10px;
+    padding: 40px;
+    color: white;
+}
+.content p{
+    font-size: 18px;
+}
+
+.content #name, #price{
+    font-size: 30px;
+    color: gold;
+}
+
+.drinkcard{
+    position: relative;
+    top: 2em;
+    margin: 1em;
+    background-color: #8CB7C3;
+    box-shadow: 5px 10px 5px hsl(0, 0%, 90%);
+}
+
+.reviewsection{
+    margin: 6em 0;
+}
+
+.reviewsection .title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.reviewcard{
+    width: 25%;
+    padding: 10px;
+    box-shadow: 5px 10px 5px hsl(0, 0%, 90%);
+}
+
+.reviewcard:hover , .drinkcard:hover{
+    transform: scale(1.1);
+    transition: 0.6s ease;
+}
+
+a:hover{
+    font-size: 1.5rem;
+    transition: 0.6s ease-in;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.content #select{
+    position: relative;
+    top: 10px;
+    left: 5px;
+}
+
+.cards .name{
+    font-size: 30px;
+}
+
+.contact{
+    color: grey;
+    background-color: hsl(0, 0%, 97%);
+}
+
+.contact a{
+    color: grey;
+    font-size: 1rem;
+}
+
+.contact .top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8em;
+    padding-top: 5em;
+    flex-wrap: wrap;
+}
+
+.contact .top .topleft{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact .main{
+    color: black;
+    font-size: 1.3rem;
+}
+
+.contact .bottom{
+    margin: 2em 0 0 3%;
+    font-size: 1.5rem;
+}
+
+#partner{
+    color: black;
+    font-size: 1.3rem;
+}
+
+.contact .bottom{
+    padding-bottom: 2em;
+}
+
+.contact .bottom span{
+    color: black;
+}
+
+.contact .topright{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 10%;
+    font-size: 1.3rem;
+}
+
+.giftcards a{
+    color: black;
+    font-size: 1.3rem;
+}
+
+.socials img{
+    width: 20px;
+}
+
+#twitter{
+    margin-top: 10px;
+    margin-left: 8%;
+}
+
+#meta{
+    margin-left: 8%;
+}

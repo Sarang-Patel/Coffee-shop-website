@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <div class="front">
+        <header class="global">
+            <nav class="global">
+
+                <ul class="mainleft">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                </ul>
+
+                <a href="#" class="logo"><img src="Coffee Canva.png" alt=""></a>
+
+                <ul class="mainright">
+                    <li><a href="#">Subscription</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                    <li><div class="material-icons" onclick="myFunction()">
+                        shopping_cart
+                    </div></li>
+                </ul>
+            </nav>
+            <div id="cart">
+                <div class="title">Cart</div>
+                <div class="contents"></div>
+            </div>
+        </header>
+
+        <div class="coverimage">
+            <span><h2>HandPicked Crushed And brewed With Love</h2></span>
+            <img src="sina-asgari-PiMzzWQa9yE-unsplash.jpg" alt="coffee image">
+        </div>
+    </div>
+
+    <div class="drinktitle">-----{ Pick Your Drink }-----</div>
+    <div class="menu" id="menu">
+        <div class="drinkcard">
+            <div class="contents">
+                <div class="cappuccino content">
+                    <span id="name">Cappuccino</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque in culpa necessitatibus ducimus saepe?</p>
+                    <span id="price">4.30$</span>
+                    <span id="select" onclick="addvalue()">Add to cart+</span>
+                </div>
+            </div>
+        </div>
+        <div class="drinkcard">
+            <div class="contents">
+                <div class="espresso content">
+                    <span id="name">Espresso</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque in culpa necessitatibus ducimus saepe?</p>
+                    <span id="price">6$</span>
+                    <span id="select" onclick="addvalue()">Add to cart+</span>
+                </div>
+            </div>
+        </div>
+        <div class="drinkcard">
+            <div class="contents">
+                <div class="espresso content">
+                    <span id="name">Caramel Latte</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque in culpa necessitatibus ducimus saepe?</p>
+                    <span id="price">9.50$</span>
+                    <span id="select" onclick="addvalue()">Add to cart+</span>
+                </div>
+            </div>
+        </div>
+        <div class="drinkcard">
+            <div class="contents">
+                <div class="espresso content">
+                    <span id="name">Mocha</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque in culpa necessitatibus ducimus saepe?</p>
+                    <span id="price">5$</span>
+                    <span id="select" onclick="addvalue()">Add to cart+</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="treattitle">-----{ Treats }-----</div>
+
+        <div class="drinkcard">
+            <div class="contents">
+                <div class="cappuccino content">
+                    <span id="name">ALMOND CROISSANT</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque in culpa necessitatibus ducimus saepe?</p>
+                    <span id="price">6.50$</span>
+                    <span id="select" onclick="addvalue()">Add to cart+</span>
+                </div>
+            </div>
+        </div>
+        <div class="drinkcard">
+            <div class="contents">
+                <div class="espresso content">
+                    <span id="name">STUFFED COOKIES</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque in culpa necessitatibus ducimus saepe?</p>
+                    <span id="price">6$</span>
+                    <span id="select" onclick="addvalue()">Add to cart+</span>
+                </div>
+            </div>
+        </div>
+        <div class="drinkcard">
+            <div class="contents">
+                <div class="espresso content">
+                    <span id="name">DARK CHOC CARAMEL BROWNIE</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque in culpa necessitatibus ducimus saepe?</p>
+                    <span id="price">6$</span>
+                    <span id="select" onclick="addvalue()">Add to cart+</span>
+                </div>
+            </div>
+        </div>
+        <div class="drinkcard">
+            <div class="contents">
+                <div class="espresso content">
+                    <span id="name">Cannoli</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque in culpa necessitatibus ducimus saepe?</p>
+                    <span id="price">6$</span>
+                    <span id="select" onclick="addvalue()">Add to cart+</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reviewsection" id="reviews">
+        <div class="title"><h2>-----{ What Our customers say }-----</h2></div>
+        <div class="cards">
+            <div class="reviewcard">
+                <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolorem adipisci nihil soluta repellat, necessitatibus neque cumque! Libero, laboriosam illum?</p>
+                <span class="name">-Lorem</span>
+            </div>
+            <div class="reviewcard">
+                <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolorem adipisci nihil soluta repellat, necessitatibus neque cumque! Libero, laboriosam illum?</p>
+                <span class="name">-Lorem</span>
+            </div>
+            <div class="reviewcard">
+                <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolorem adipisci nihil soluta repellat, necessitatibus neque cumque! Libero, laboriosam illum?</p>
+                <span class="name">-Lorem</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="footer">
+        <div class="top">
+            <div class="topleft">
+                <div class="shop">
+                    <div class="main">Shop</div>
+                    <div><a href="#">Coffee</a></div>
+                    <div><a href="#">Snacks</a></div>
+                    <div><a href="#">Subscribe</a></div>
+                </div>
+                <div class="wholesale">
+                    <div class="main"><a href="#" id="partner">Be our partner</a></div>
+                </div>
+                <div class="about">
+                    <div class="main">About</div>
+                    <div><a href="#">Company</a></div>
+                    <div><a href="#">Jobs</a></div>
+                    <div><a href="#">Privacy policy</a></div>
+                    <div><a href="#">Contact</a></div>
+                </div>
+                <div class="location">
+                    <div class="main">Location</div>
+                    <div><a href="#">Pune</a></div>
+                    <div><a href="#">Mumbai</a></div>
+                    <div><a href="#">Banglore</a></div>
+                    <div><a href="#">Delhi</a></div>
+                </div>
+            </div>
+            <div class="topright">
+                <div class="giftcards"><a href="#">Give a gift</a></div><br>
+                <div class="socials">
+                    <span>Follow us on social media</span><br>
+                    <a href="#"><img src="https://img.icons8.com/metro/52/000000/instagram-new.png" id="insta"/></a>
+                    <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png" id="twitter"/></a>
+                    <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/meta.png" id="meta"/></a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottomleft"><span>CoffeeCanva inc.</span> <br>Since 2021</div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+        var cart = document.getElementById("cart");
+        if (cart.style.display === "none") {
+            cart.style.display = "block";
+            
+        } else {
+            cart.style.display = "none";
+        }
+        }
+
+        function addvalue(){
+            var cart = document.getElementById("cart");
+            var drinkname = document.getElementById("name");
+            var drinkprice = document.getElementById("price");
+
+            cart.innerHTML+="Product: "
+            cart.innerHTML+=drinkname.innerHTML
+            cart.innerHTML+="<br>"
+            cart.innerHTML+="Price: "
+            cart.innerHTML+=drinkprice.innerText
+            cart.innerHTML+="<br>"           
+            cart.innerHTML+="<br>"           
+        }
+    </script>
+</body>
+</html>
