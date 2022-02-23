@@ -32,7 +32,7 @@
             </nav>
             <div id="cart">
                 <div class="title">Cart</div>
-                <div class="contents"></div>
+                <div class="contents" id="cartcontents"></div>
             </div>
         </header>
 
@@ -201,29 +201,34 @@
         }
 
         function addcappuccino(){
-            var cart = document.getElementById("cart");
+            var cart = document.getElementById("cartcontents");
             var drinkname = document.getElementById("cappuccinoname");
             var drinkprice = document.getElementById("cappuccinoprice");
             
             cart.innerHTML+="<br>Product: "
             cart.innerHTML+=drinkname.innerHTML
-            cart.innerHTML+="<br>"
-            cart.innerHTML+="Price: "
+            cart.innerHTML+="<br>Price: "
             cart.innerHTML+=drinkprice.innerText
-            cart.innerHTML+="<br><br><hr>"        
+            cart.innerHTML+="<br><button style='border-style:none; cursor:pointer;' onclick='clearitem()'>Remove Item</button><br><hr>"        
         }
 
         function addespresso(){
-            var cart = document.getElementById("cart");
+            var cart = document.getElementById("cartcontents");
             var drinkname = document.getElementById("espressoname");
             var drinkprice = document.getElementById("espressoprice");
             
+            cart.innerHTML+="<div id='item'>"
             cart.innerHTML+="<br>Product: "
             cart.innerHTML+=drinkname.innerHTML
-            cart.innerHTML+="<br>"
-            cart.innerHTML+="Price: "
+            cart.innerHTML+="<br>Price: "
             cart.innerHTML+=drinkprice.innerText
-            cart.innerHTML+="<br><br><hr>"        
+            cart.innerHTML+="<br><button style='border-style:none; cursor:pointer;' onclick='clearitem()'>Remove Item</button><br><hr>"
+            cart.innerHTML+="</div>"        
+        }
+
+        function clearitem(){
+            var cart = document.getElementById("cartcontents");
+            cart.innerHTML="<div id='cart'><div class='title'>Cart</div><div class='contents' id='cartcontents'></div></div>"
         }
     </script>
 </body>
