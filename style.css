@@ -64,6 +64,9 @@ header.global{
     padding-left: 20px;
 }
 
+#cart .clear{
+    position: relative;
+}
 
 h2{
     font-family: 'Amatic SC', sans-serif;
@@ -159,9 +162,13 @@ li{
     font-size: 18px;
 }
 
-.content #name, #price{
+.content .name, .price {
     font-size: 30px;
     color: gold;
+}
+
+#select{
+    cursor: pointer;
 }
 
 .drinkcard{

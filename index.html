@@ -47,9 +47,29 @@
         <div class="drinkcard">
             <div class="contents">
                 <div class="cappuccino content">
-                    <span id="name">Cappuccino</span>
+                    <span class="name" id="cappuccinoname">Cappuccino</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque in culpa necessitatibus ducimus saepe?</p>
-                    <span id="price">4.30$</span>
+                    <span class="price" id="cappuccinoprice">4.30$</span>
+                    <span id="select" onclick="addcappuccino()">Add to cart+</span>
+                </div>
+            </div>
+        </div>
+        <div class="drinkcard">
+            <div class="contents">
+                <div class="espresso content">
+                    <span class="name"  id="espressoname">Espresso</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque in culpa necessitatibus ducimus saepe?</p>
+                    <span class="price" id="espressoprice">6$</span>
+                    <span id="select" onclick="addespresso()">Add to cart+</span>
+                </div>
+            </div>
+        </div>
+        <div class="drinkcard">
+            <div class="contents">
+                <div class="espresso content">
+                    <span class="name" id="name">Caramel Latte</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque in culpa necessitatibus ducimus saepe?</p>
+                    <span class="price" id="price">9.50$</span>
                     <span id="select" onclick="addvalue()">Add to cart+</span>
                 </div>
             </div>
@@ -57,29 +77,9 @@
         <div class="drinkcard">
             <div class="contents">
                 <div class="espresso content">
-                    <span id="name">Espresso</span>
+                    <span class="name" id="name">Mocha</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque in culpa necessitatibus ducimus saepe?</p>
-                    <span id="price">6$</span>
-                    <span id="select" onclick="addvalue()">Add to cart+</span>
-                </div>
-            </div>
-        </div>
-        <div class="drinkcard">
-            <div class="contents">
-                <div class="espresso content">
-                    <span id="name">Caramel Latte</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque in culpa necessitatibus ducimus saepe?</p>
-                    <span id="price">9.50$</span>
-                    <span id="select" onclick="addvalue()">Add to cart+</span>
-                </div>
-            </div>
-        </div>
-        <div class="drinkcard">
-            <div class="contents">
-                <div class="espresso content">
-                    <span id="name">Mocha</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque in culpa necessitatibus ducimus saepe?</p>
-                    <span id="price">5$</span>
+                    <span class="price" id="price">5$</span>
                     <span id="select" onclick="addvalue()">Add to cart+</span>
                 </div>
             </div>
@@ -90,9 +90,9 @@
         <div class="drinkcard">
             <div class="contents">
                 <div class="cappuccino content">
-                    <span id="name">ALMOND CROISSANT</span>
+                    <span class="name" id="name">ALMOND CROISSANT</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque in culpa necessitatibus ducimus saepe?</p>
-                    <span id="price">6.50$</span>
+                    <span class="price" id="price">6.50$</span>
                     <span id="select" onclick="addvalue()">Add to cart+</span>
                 </div>
             </div>
@@ -100,9 +100,9 @@
         <div class="drinkcard">
             <div class="contents">
                 <div class="espresso content">
-                    <span id="name">STUFFED COOKIES</span>
+                    <span class="name" id="name">STUFFED COOKIES</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque in culpa necessitatibus ducimus saepe?</p>
-                    <span id="price">6$</span>
+                    <span class="price" id="price">6$</span>
                     <span id="select" onclick="addvalue()">Add to cart+</span>
                 </div>
             </div>
@@ -110,9 +110,9 @@
         <div class="drinkcard">
             <div class="contents">
                 <div class="espresso content">
-                    <span id="name">DARK CHOC CARAMEL BROWNIE</span>
+                    <span class="name" id="name">DARK CHOC CARAMEL BROWNIE</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque in culpa necessitatibus ducimus saepe?</p>
-                    <span id="price">6$</span>
+                    <span class="price" id="price">6$</span>
                     <span id="select" onclick="addvalue()">Add to cart+</span>
                 </div>
             </div>
@@ -120,9 +120,9 @@
         <div class="drinkcard">
             <div class="contents">
                 <div class="espresso content">
-                    <span id="name">Cannoli</span>
+                    <span class="name" id="name">Cannoli</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus neque in culpa necessitatibus ducimus saepe?</p>
-                    <span id="price">6$</span>
+                    <span class="price" id="price">6$</span>
                     <span id="select" onclick="addvalue()">Add to cart+</span>
                 </div>
             </div>
@@ -200,18 +200,30 @@
         }
         }
 
-        function addvalue(){
+        function addcappuccino(){
             var cart = document.getElementById("cart");
-            var drinkname = document.getElementById("name");
-            var drinkprice = document.getElementById("price");
-
-            cart.innerHTML+="Product: "
+            var drinkname = document.getElementById("cappuccinoname");
+            var drinkprice = document.getElementById("cappuccinoprice");
+            
+            cart.innerHTML+="<br>Product: "
             cart.innerHTML+=drinkname.innerHTML
             cart.innerHTML+="<br>"
             cart.innerHTML+="Price: "
             cart.innerHTML+=drinkprice.innerText
-            cart.innerHTML+="<br>"           
-            cart.innerHTML+="<br>"           
+            cart.innerHTML+="<br><br><hr>"        
+        }
+
+        function addespresso(){
+            var cart = document.getElementById("cart");
+            var drinkname = document.getElementById("espressoname");
+            var drinkprice = document.getElementById("espressoprice");
+            
+            cart.innerHTML+="<br>Product: "
+            cart.innerHTML+=drinkname.innerHTML
+            cart.innerHTML+="<br>"
+            cart.innerHTML+="Price: "
+            cart.innerHTML+=drinkprice.innerText
+            cart.innerHTML+="<br><br><hr>"        
         }
     </script>
 </body>
